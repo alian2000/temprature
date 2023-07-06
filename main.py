@@ -1,5 +1,5 @@
 def on_button_pressed_a():
-    if input.temperature() > 20:
+    if input.temperature() > 25:
         basic.show_number(input.temperature())
         basic.show_icon(IconNames.SMALL_DIAMOND)
         basic.pause(5000)
