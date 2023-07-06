@@ -6,7 +6,7 @@ def on_button_pressed_a():
         basic.show_string("HOT")
     else:
         basic.show_number(input.temperature())
-        basic.show_string("Cold")
+        basic.show_string("Very Cold")
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
 def on_button_pressed_ab():
