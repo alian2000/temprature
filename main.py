@@ -1,3 +1,5 @@
+x = 0
+
 def on_button_pressed_a():
     if input.temperature() > 25:
         basic.show_number(input.temperature())
@@ -10,7 +12,8 @@ def on_button_pressed_a():
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
 def on_button_pressed_ab():
-    basic.show_arrow(ArrowNames.SOUTH)
+    global x
+    x = 1
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 
 def on_button_pressed_b():
